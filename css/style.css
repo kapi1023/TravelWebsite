@@ -297,6 +297,9 @@ body .login{
 }
 
 .login {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     color: #5d5d5a;
     background: #ffcdab;
     margin: auto;
@@ -306,17 +309,19 @@ body .login{
       0px 30px 60px 1px rgba(0,0,0,0.5);
     border-radius: 8px;
     padding: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2em;
   }
   .login .head {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30%;
   }
   .login .head .info{
     font-size: 3.2em;
+
+  }
+  .login .form{
+    width: 70%;
   }
   .login .form input {
     border: none;
@@ -395,7 +400,7 @@ body .login{
  
   }
   .sales-boxes .recent-sales{
-    width: 65%;
+    width: 100%;
     background: #fff4e3;
     padding: 20px 30px;
     margin: 0 20px;
@@ -409,25 +414,20 @@ body .login{
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .sales-boxes .box table{
+    width: 100%;
+    font-size: 1.5em;
+
+  }
+  .sales-boxes .box table thead{
+    text-align: left;
+  }
+  .sales-boxes .box table thead .last{
+    text-align: right;
+  }
   .sales-boxes .box .title{
     font-size: 24px;
     font-weight: 500;
-  }
-  .sales-boxes .sales-details li.topic{
-    font-size: 20px;
-    font-weight: 500;
-  }
-  .sales-boxes .sales-details li{
-    list-style: none;
-    margin: 8px 0;
-    flex:1;
-  }
-  .sales-boxes .sales-details li a{
-    font-size: 18px;
-    color: #5d5d5a;
-    font-size: 400;
-    text-decoration: none;
-
   }
   .sales-boxes .box .button{
     width: 100%;
@@ -476,6 +476,9 @@ body .login{
     .header{
         padding:1.5rem 2rem ;
     }
+    .home{
+        margin-top: 11em;
+    }
     
 }
 
@@ -505,8 +508,12 @@ body .login{
         font-size: 2rem;
 
     }
-    .content{
-        grid-template-columns: 1fr;
+    .home{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: column;
+        
     }
     .aboutas .content {
         grid-template-columns: repeat(1, 1fr);
@@ -515,7 +522,7 @@ body .login{
         font-size: 0.8rem;
     }
     .login{
-        grid-template-columns: repeat(1, 1fr); /* dwie kolumny */
+        flex-direction: column;
     }
 
 
