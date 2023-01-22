@@ -9,7 +9,6 @@
     <title>Travel</title>
 </head>
 <body>
-
     <header class="header">
         <a href="#" class="logo">
             <img src="../images/logo.svg" alt="logo">
@@ -18,6 +17,7 @@
             <a href="#dashboard">dashboard</a>
         </nav>
         <div class="icons">
+            <a href="../index.html"><div class="fa-solid fa-right-to-bracket" id="login-btn"></div></a>
             <div class="fa-solid fa-bars" id="menu-btn"></div>
         </div>
     </header>
@@ -50,16 +50,16 @@
               </div>
             </div>
           </div>
-          <div class="sales-boxes">
-          <div class="recent-sales box">
-            <div class="title">Post data</div>
-            <div class="sales-details">
-              <table>
+          <div class="data">
+          <div class="post-boxes">
+          <div class="recent-post box">
+            <div class="title">Your posts data</div>
+            <div class="post-details">
+              <table id="postDataTable">
                 <thead>
                   <tr>
                     <th>Post Date</th>
                     <th>Total Views</th>
-                    <th>Post Owner</th>
                     <th>Post Topic</th>
                     <th>Ads Made</th>
                     <th class="last">Edit Post</th>
@@ -69,41 +69,74 @@
                   <tr>
                     <td>02 Jan 2021</td>
                     <td>32,324</td>
-                    <td>Jontra Wolta</td>
                     <td>EGYPT</td>
                     <td>204.95$</td>
-                    <td><div class="button"><a href="#" >Edit post</a></div></td>
+                    <td><div class="button"><a href="./postEdit.html" >Edit post</a></div></td>
                   </tr>
                   <tr>
                     <td>03 Jan 2021</td>
                     <td>42,324</td>
-                    <td>Jontra Wolta</td>
                     <td>CHINA</td>
                     <td>24.55$</td>
-                    <td><div class="button"><a href="#" >Edit post</a></div></td>
+                    <td><div class="button"><a href="./postEdit.html" >Edit post</a></div></td>
                   </tr>
                   <tr>
                     <td>04 Jan 2021</td>
                     <td>52,324</td>
-                    <td>Jontra Wolta</td>
                     <td>FRANCE</td>
                     <td>25.88$</td>
-                    <td><div class="button"><a href="#" >Edit post</a></div></td>
+                    <td><div class="button"><a href="./postEdit.html" >Edit post</a></div></td>
+                  </tr>
+                                    <tr>
+                    <td>02 Jan 2021</td>
+                    <td>32,324</td>
+                    <td>EGYPT</td>
+                    <td>204.95$</td>
+                    <td><div class="button"><a href="./postEdit.html" >Edit post</a></div></td>
+                  </tr>
+                  <tr>
+                    <td>03 Jan 2021</td>
+                    <td>42,324</td>
+                    <td>CHINA</td>
+                    <td>24.55$</td>
+                    <td><div class="button"><a href="./postEdit.html" >Edit post</a></div></td>
+                  </tr>
+                  <tr>
+                    <td>04 Jan 2021</td>
+                    <td>52,324</td>
+                    <td>FRANCE</td>
+                    <td>25.88$</td>
+                    <td><div class="button"><a href="./postEdit.html" >Edit post</a></div></td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div class="button">
-              <a href="#" >See All</a>
+              <button id="seeAll">See All</button>
             </div>
           </div>
-
+          <div class="post-boxes">
+          <div class="recent-post box">
+            <div class="title">Your profile data</div>
+            <div class="post-details">
+              <div class="profile-details">
+					    <h2>Jhon Doe</h2>
+              <p><i class="fa-solid fa-envelope"></i> jhondoe@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i> 123 321 123</p>
+              <p><i class="fa-solid fa-address-card"></i> ul.fajna 14 łódź 90-000</p>
+				    </div>
+            </div>
+            <div class="button">
+              <a href="./profileEdit.html" >Edit</a>
+            </div>
+          </div>
+          </div>
     </section>
     <section class="footer" id="footer">
         <h2>Copyright © 2023 Kacper Pietrzak.</h2>
         <img class="image"src="../images/Logo2.svg" alt="logov2" >
     </section>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

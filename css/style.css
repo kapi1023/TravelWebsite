@@ -141,6 +141,25 @@ section{
 .articles .row .content, .articles .row .image{
     width: 50%;
 }
+.bestArticlesTable{
+    width: 100%;
+    font-size: 2em;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff4e3;
+    padding: 20px 30px;
+    margin: 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    align-items: left;
+
+  }
+  .bestArticlesTable thead{
+    text-align: left;
+  }
+
+
+
 
 
 .aboutas{
@@ -394,12 +413,11 @@ body .login{
     font-weight: 500;
   }
 
-  .sales-boxes{
+  .post-boxes{
     display: flex;
     justify-content: space-between;
- 
   }
-  .sales-boxes .recent-sales{
+  .post-boxes .recent-post{
     width: 100%;
     background: #fff4e3;
     padding: 20px 30px;
@@ -408,33 +426,33 @@ body .login{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .sales-boxes .sales-details{
+  .post-boxes .post-details{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .sales-boxes .box table{
+  .post-boxes .box table{
     width: 100%;
     font-size: 1.5em;
 
   }
-  .sales-boxes .box table thead{
+  .post-boxes .box table thead{
     text-align: left;
   }
-  .sales-boxes .box table thead .last{
+  .post-boxes .box table thead .last{
     text-align: right;
   }
-  .sales-boxes .box .title{
+  .post-boxes .box .title{
     font-size: 24px;
     font-weight: 500;
   }
-  .sales-boxes .box .button{
+  .post-boxes .box .button{
     width: 100%;
     display: flex;
     justify-content: flex-end;
   }
-  .sales-boxes .box .button a{
+  .post-boxes .box .button a{
     color: #5d5d5a;
     background: #ffa45c;
     padding: 4px 12px;
@@ -445,11 +463,101 @@ body .login{
     transition: all 0.3s ease;
     border: solid #ffa45c;
   }
-  .sales-boxes .box .button a:hover{
+  .post-boxes .box .button a:hover{
     background:  #fff4e3;
+  }
+  .post-boxes .box .button button{
+    color: #5d5d5a;
+    background: #ffa45c;
+    padding: 4px 12px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: solid #ffa45c;
+  }
+  .post-boxes .box .button button:hover{
+    background:  #fff4e3;
+  }
+  .post-details #postDataTable tr:nth-child(n+4) {
+    display: none;
   }
 
 
+
+
+
+
+
+
+  .profile-details{
+    font-size: 2em;
+  }
+
+.editingSection{
+
+    background-color:#ffa45c ;
+    margin-top: 11em;
+}
+
+
+
+.editing-details {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5em;
+    flex:1 1 40em;
+    padding: 5rem 2rem;
+
+}
+
+
+
+.editing-details  .btn-contact{
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px #ffa45c;
+    color: #5d5d5a;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 1em;
+}
+.editing-details  h2{
+    text-transform: uppercase;
+    font-size: 2em;
+    color:#5d5d5a ;
+}
+
+.editing-details {
+    
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: #fff4e3;
+
+}
+
+.editing-details  input{
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px #ffa45c;
+    width: 100%;
+    color: #5d5d5a;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 1em;
+}
+.editing-details  textarea{
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px #ffa45c;
+    width: 100%;
+    color: #5d5d5a;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 1em;
+}
 
 
 
