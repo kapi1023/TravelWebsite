@@ -484,6 +484,12 @@ body .login{
     display: none;
   }
 
+.page-details-data a{
+    margin:0 1rem;
+    font-size: 3rem;
+    color: #5d5d5a;
+}
+
 
 
 
